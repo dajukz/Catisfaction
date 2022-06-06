@@ -1,0 +1,170 @@
+* {
+  box-sizing: border-box;
+}
+
+header .inner {
+  margin-top: -3.6rem;
+}
+
+header .inner .buttontext {
+  height: 4rem;
+}
+
+header .inner a {
+  color: var(--eyecatcher-color);
+}
+
+main {
+  z-index: -1;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  z-index: 0;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  display: flex;
+  position: relative;
+}
+
+.quiz {
+  height: 35vh;
+  width: 75vw;
+  border: 1px solid var(--border-box-color);
+  border-radius: 5px;
+  display: none;
+}
+
+.prev, .next {
+  color: var(--eyecatcher-color);
+  box-shadow: 0px 2px 2px var(--border-box-color);
+  cursor: pointer;
+  border-radius: 3px;
+  padding: 1rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  transition: all .6s;
+  position: absolute;
+  top: 50%;
+}
+
+.prev {
+  left: 1rem;
+}
+
+.next {
+  right: 1rem;
+}
+
+.prev:hover, .next:hover {
+  color: #fff;
+  background-color: var(--bg-accent-light-end);
+}
+
+.text {
+  color: var(--small-font-color);
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+
+.linkContainer {
+  flex-direction: row;
+  margin-bottom: 1rem;
+  display: flex;
+}
+
+.dot {
+  height: 2.25rem;
+  width: 2.25rem;
+  color: var(--small-font-color);
+  background-color: var(--bg-accent-light-start);
+  cursor: pointer;
+  z-index: 0;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  margin-inline: .25rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: background-color .6s;
+  display: flex;
+}
+
+.active, .dot:hover {
+  background-color: var(--eyecatcher-color);
+  color: #fff;
+}
+
+img {
+  width: 75%;
+  height: 50%;
+  object-fit: contain;
+  margin-block: 5%;
+  margin-inline: 10%;
+}
+
+#beforeContain {
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+
+#beforeContain > * {
+  margin-top: 1rem;
+}
+
+#beforeContain button {
+  width: 40%;
+  height: 10%;
+  background-color: var(--bg-accent-light-end);
+  color: #fff;
+  box-shadow: 0 2px 2px var(--border-box-color);
+  border: 1px solid var(--bg-accent-light-end);
+  font-size: 1.25rem;
+}
+
+#beforeContain button:hover {
+  background-color: var(--eyecatcher-color);
+  border: 1px solid var(--eyecatcher-color);
+  color: #fff;
+  box-shadow: 0 2px 2px var(--border-box-color);
+  transition: all .5s ease-in-out;
+}
+
+#pfff {
+  color: var(--eyecatcher-color);
+  font-size: 2rem;
+}
+
+label > abbr.required {
+  color: var(--error-color);
+  text-decoration: none;
+}
+
+input.invalid {
+  color: var(--error-color);
+  border-color: var(--error-color);
+}
+
+.inputDescription {
+  color: var(--error-color);
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: .4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=quiz.9b8b8595.css.map */

@@ -1,0 +1,17 @@
+{
+  "name": "catisfaction",
+  "version": "1.0.0",
+  "description": "",
+  "source": "index.html",
+  "main": "index.js",
+  "scripts": {
+    "test": "parcel"
+  },
+  "author": "Youke Thomas",
+  "license": "ISC",
+  "dependencies": {
+    "a11y-dialog": "^7.4.0",
+    "ejs": "^3.1.8",
+    "parcel": "^2.6.0"
+  }
+}
