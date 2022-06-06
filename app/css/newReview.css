@@ -1,0 +1,83 @@
+:root {
+    --error-color: rgb(200, 0, 0);
+    --button-color: rgb(0, 90, 240);
+    --button-hover-color: rgb(20, 110, 220);
+    --border-radius: 5px;
+  }
+  
+  label,
+  legend {
+    display: block;
+    font-size: 1.375em;
+    font-weight: 600;
+    margin: 0 0 0.5em 0;
+  }
+  
+  input {
+    border: 1px solid #ccc;
+    font-size: 1.375em;
+    padding: 0.75em;
+    width: 90%; /* fallback if calc isn't working */
+    width: calc(100% - 1.5em); /* full width minus padding */
+  }
+  
+  input[type='number'] {
+    width: 5em; /* 5em = 16px * 5 = 80px */
+  }
+  
+  input[type='radio'],
+  input[type='checkbox'] {
+    width: 1.5em;
+    cursor: pointer;
+  }
+  
+  input[type='checkbox'] {
+    /* Alignment of the checkbox */
+    margin-left: -5.5px;
+  }
+  
+  input[type='radio'] + label,
+  input[type='checkbox'] + label {
+    display: inline;
+    font-size: 1em;
+    font-weight: normal;
+    cursor: pointer;
+  }
+
+  
+  
+  /* if there is an error or the user needs more explanation */
+  div.inputDescription {
+    margin-top: 0.25em;
+    color: var(--error-color);
+    display: none;
+  }
+  
+  
+  input.invalid {
+    color: var(--error-color);
+    border-color: var(--error-color);
+  }
+  
+  label > abbr.optional {
+    color: #888;
+    font-weight: normal;
+    text-decoration: none;
+  }
+  
+  label > abbr.required,
+  legend > abbr.required {
+    color: var(--error-color);
+    text-decoration: none;
+  }
+  
+  /* The code below is for a desktop or tablet */
+  @media (min-width: 500px) {
+    button,
+    input,
+    label,
+    legend {
+      font-size: 1.2em;
+    }
+  }
+  
